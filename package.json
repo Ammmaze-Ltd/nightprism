@@ -1,15 +1,17 @@
 {
   "name": "@ammmaze-ltd/nightprism",
   "version": "0.0.1",
-  "main": "index.js",
+  "description": "MCP-native security scanner that asks \"should I ship tonight?\" for AI-generated code.",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "start": "tsx src/index.ts",
+    "build": "tsc"
   },
-  "keywords": [],
+  "keywords": ["mcp", "security", "scanner", "ai-code", "cursor", "claude-code", "sast"],
   "author": "",
   "license": "Apache-2.0",
-  "description": "",
-  "type": "module",
   "devDependencies": {
     "@types/node": "^25.9.1",
     "tsx": "^4.22.3",
